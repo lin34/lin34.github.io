@@ -1,0 +1,201 @@
+body{
+    position: relative;
+}
+
+.portrait-img{
+    border-radius: 50%;
+    width:300px;
+    height:300px;
+    border: 3px black; 
+}
+.table-job{
+    width:100%;
+}
+
+.logo-col {
+	width: 20%;
+}
+
+.job-col{
+    width:50%;
+    text-align:left;
+}
+
+.duration-col{
+    float:right;
+    white-space: nowrap;
+    text-align:right;
+}
+
+.duration-text{
+  margin-top:40px !important;
+}
+
+.text-job-name{
+    white-space: nowrap;
+}
+
+.job-description{
+  float:left;
+  text-align: left;
+}
+.work-height{
+  min-height:1100px;
+}
+
+.work-section{
+  width:900px;
+}
+
+.img-project{
+  height:200px;
+}
+
+.project-card{
+  display:flex;
+  width: 300px;
+  height:400px;
+  
+}
+.music-card{
+  width: 600px;
+
+}
+
+.nav-item-container{
+  height:40px;
+}
+
+.nav-item-text{
+    font-size: 20px;
+    vertical-align: middle;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.dark-color{
+    background-color: #292b2c;
+}
+
+.title-description{
+    font-weight:normal;
+}
+.job-header{
+    width:100%;
+}
+.company-logo{
+    width:100px;
+    height:100px;
+    float:left;
+}
+
+.home-msg{
+    font-size:40px;
+    font-weight: bold;
+    text-align: center;
+    margin:auto;
+}
+
+.center-both-ways{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section{
+    height:1000px;
+}
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    background-color: #292b2c;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+.nav-scroll ul{
+  padding:0;
+  list-style-type:none;
+}
+
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #33cc33 !important;
+    color: white;
+  }
+
+  .is-current{
+    background-color: #33cc33;
+    color: white;
+  }
+
+  .hide-li{
+    list-style-type: none;
+    width:100%;
+  }
+  .hover-header:hover{
+    background-color: rgb(161, 158, 158);
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    position: relative;
+    margin-left: 500px;
+    padding: 1px 16px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 1000px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      /* position: relative; */
+      z-index: 1000;
+      position: fixed;
+      top: 0;
+    }
+    .sidebar a {float: left;
+    display:inline;
+    }
+    div.content {margin-left: 0;}
+      /* Hides portrait photo on small screens*/
+    .portrait-img{
+        display:none;
+    }
+    .title-name{
+        float:left;
+        margin:20px;
+    }
+    .title-description{
+        display:none;
+    }
+  }
+
+    /* On screens that are less than 750px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 750px) {
+    .sidebar a {
+      text-align: center;
+      font-size: 10px;
+    }
+    .work-section{
+      width:100%;
+    }
+  }
