@@ -10,6 +10,7 @@ import ShoppingList from "../img/projects/shopping_list.PNG";
 import Arm from "../img/projects/arm.png";
 import NoteProject from "../img/projects/note-app/note_page.PNG";
 import LineFollow from "../img/line_follow.jpg";
+import wifi_therm from "../img/projects/wifi_therm_behind.jpg";
 class Projects extends Component {
   state = {};
 
@@ -20,6 +21,19 @@ class Projects extends Component {
         <div
           className="d-flex project-container justify-content-center"
         >
+<Project
+            pictureSource={wifi_therm}
+            title="Wifi Smart Thermostat"
+            lang="Python, Flask, REST API, Multi-threading, SolidWorks"
+            shortDescription="This Wifi Smart thermostat allows you to remotely control your HVAC system."
+            longDescription="
+      Wifi smart thermostat made using Raspberry Pi controlled relays. I configured a basic Flask Restful
+      server to handle http requests. I also made a Flask web app connected that can be accessed through 
+      any device on the same network via the host IP address."
+            link="https://github.com/lin34/wifi_smart_thermostat"
+          />
+
+
           <Project
             pictureSource={MERNGStack}
             title="Social Media App"
