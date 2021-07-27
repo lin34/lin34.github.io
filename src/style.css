@@ -1,5 +1,6 @@
 h1{
   padding-top:50px;
+  font-weight: bold;
 }
 
 body{
@@ -32,7 +33,7 @@ body{
 }
 
 .duration-text{
-  margin-top:40px !important;
+  margin-top:30px !important;
 }
 
 .text-job-name{
@@ -93,8 +94,8 @@ body{
     width:100%;
 }
 .company-logo{
-    width:100px;
-    height:100px;
+    width:60px;
+    height:60px;
     float:left;
 }
 

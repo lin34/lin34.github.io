@@ -81,12 +81,11 @@ class NavBar extends Component {
 
         <div className="nav-scroll">
           <Scrollspy
-            items={["work-experience", "projects", "music"]}
+            items={["projects", "work-experience"]}
             currentClassName="is-current"
           >
-            <a href="#work-experience">Work Experience</a>
             <a href="#projects">Projects</a>
-            <a href="#music">Music</a>
+            <a href="#work-experience">Work Experience</a>
           </Scrollspy>
         </div>
       </div>
