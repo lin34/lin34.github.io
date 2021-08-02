@@ -1,0 +1,14 @@
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    background-color: #292b2c;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  div.content {
+    position: relative;
+    margin-left: 500px;
+    padding: 1px 16px;
+  }
