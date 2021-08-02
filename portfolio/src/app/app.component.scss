@@ -1,14 +1,29 @@
-.sidebar {
-    margin: 0;
-    padding: 0;
-    width: 500px;
-    background-color: #292b2c;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
-  div.content {
+ body{
+   position:relative;
+ }
+ .content {
     position: relative;
-    margin-left: 500px;
+    margin-left: 400px;
     padding: 1px 16px;
+  }
+
+  .section{
+    min-height:100vh;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .content{
+      position: relative;
+      margin-left: 0px;
+      margin-top:100px;
+      padding: 1px 16px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .content{
+      position: relative;
+      margin-left: 0px;
+      margin-top:200px;
+      padding: 1px 16px;
+    }
   }
