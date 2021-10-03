@@ -2,7 +2,7 @@
 
 # compiled output
 #uncomment docs if you want to publish
-/docs
+#/docs
 /portfolio/dist
 /portfolio/tmp
 /portfolio/out-tsc
