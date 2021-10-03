@@ -2,10 +2,9 @@
     <div class="d-flex justify-content-center">
         <h1 class="font-weight-bold m-5">Projects</h1>
     </div>
-    <div class="d-flex projects-width justify-content-center">
-        <div class="d-flex justify-content-center project-container">
-            <div *ngFor="let project of myProjects" class="project-box">
-                <img class="img-project" [src]="project.picture" [alt]="project.name">
+        <div class="projects">
+            <div *ngFor="let project of myProjects" class="project">
+                <img [src]="project.picture" [alt]="project.name">
                 <div class="description">
                     <a [href]="project.link" target="_blank"><h3 class="font-weight-bold">{{project.name}}</h3></a>
                     <p>Skills: {{project.lang}}</p>
@@ -15,5 +14,5 @@
             </div>
         </div>
           
-    </div>
+
 </div>

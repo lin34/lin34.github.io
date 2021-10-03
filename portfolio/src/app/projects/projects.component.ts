@@ -8,6 +8,18 @@ import { ProjectData } from './project-data';
 export class ProjectsComponent implements OnInit {
   myProjects: ProjectData[] = [
     {
+      name: 'Bicep Curl Counter',
+      lang: 'Python, Mediapipe, OpenCV',
+      shortDescription:'A handy machine vision workout tool to count your curls.',
+      longDescription: `Uses mediapipe's pose detection library to track joints.
+      The elbow joint angle is calculated using trigonometry and the relative angle between the left shoulder, left elbow
+      and left wrist. From this, the stage of the bicep curl is found. If the angle is greater than 160 degrees,
+      it is in the down position, however when it reaches < 30 degrees, it is in the up position.
+      When the arm transitions between these two stages, the counter is incremented.`,
+      link: 'https://github.com/lin34/BicepCurlCounter',
+      picture: '../assets/projects/bicep_curl_counter.PNG',
+    },
+    {
       name: 'Wifi Smart Thermostat',
       lang: 'Python, Flask, REST API, Multi-threading, SolidWorks',
       shortDescription:'This Wifi Smart thermostat allows you to remotely control your HVAC system.',
@@ -15,7 +27,7 @@ export class ProjectsComponent implements OnInit {
                         server to handle http requests. I also made a Flask web app connected that can be accessed through 
                         any device on the same network via the host IP address.`,
       link: 'https://github.com/lin34/wifi_smart_thermostat',
-      picture: '../assets/projects/wifi_therm_behind.jpg',
+      picture: '../assets/projects/wifi_therm_with_display.jpg',
     },
     {
       name: 'Social Media App',
