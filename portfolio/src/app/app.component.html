@@ -1,22 +1,19 @@
-<nav-bar></nav-bar>
-<div class="content">
-
-  <div class="section night">
+<div class="container">
+  <!-- Section 1 -->
+  <section class="section-1 center" id="section-1">
     <home></home>
-  </div>
-  <div class="section">
+  </section>
+  <!-- End of Section 1 -->
+  <nav-bar></nav-bar>
+  <section class="section-2" id="section-2">
     <projects></projects>
-  </div>
-  <div class="section">
+  </section>
+  <section class="section-3" id="section-3">
     <work-experience></work-experience>
-  </div>
-</div>
-<!-- <script type="text/javascript">
-$(document).ready(function(){
-  $('.content').scrollspy({
-    target: '#main-nav',
-  });
-});
-</script> -->
+  </section>
+  <section id="section-4">
+    <app-footer></app-footer>
+  </section>
 
+</div>
 <router-outlet></router-outlet>

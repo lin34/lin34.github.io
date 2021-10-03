@@ -1,186 +1,53 @@
- body{
-      position: relative;
-  }
-  .portrait-container{
-    position:relative;
-  }
-  .portrait-img{
-      border-radius: 50%;
-      width:300px;
-      height:300px;
-      border: 3px black; 
-      margin:20px;
-  }
-
-  #main-nav{
-    width:100%;
-  }
-  .nav-item-container{
-    height:40px;
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 4rem;
+    background-color: #e41c6f;
+    box-shadow: 0.2rem 0.2rem 0.5rem #555;
+    position: absolute;
+    z-index: 300;
   }
   
-  .nav-item-text{
-      font-size: 20px;
-      vertical-align: middle;
-      margin-top:10px;
-      margin-bottom: 10px;
+  .sticky {
+    position: fixed;
+    top: 0;
   }
   
-  .dark-color{
-      background-color: #292b2c;
+  .navbar-link {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 3rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.2s;
   }
   
-  .title-description{
-      font-weight:normal;
-  }
-  .job-header{
-      width:100%;
-  }
-  .company-logo{
-      width:60px;
-      height:60px;
-      float:left;
+  .change.navbar-link {
+    color: #fff;
   }
   
-  .home-msg{
-      font-size:40px;
-      font-weight: bold;
-      text-align: center;
-      margin:auto;
-  }
-  .center-both-ways{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  .navbar-link:hover {
+    color: #fff;
   }
   
-  .section{
-      height:1000px;
+  .navbar-link::before {
+    content: "";
+    width: 0;
+    height: 0.2rem;
+    background-color: #fff;
+    position: absolute;
+    right: -15%;
+    bottom: -0.3rem;
+    transition: width 0.2s;
   }
   
-  .text-white{
-      color:white !important;
+  .change.navbar-link::before {
+    width: 130%;
   }
   
-  /* The side navigation menu */
-  .sidebar {
-      margin: 0;
-      padding: 0;
-      width: 400px;
-      background-color: #292b2c;
-      position: fixed;
-      height: 100%;
-      overflow: auto;
-    }
-    
-  .nav-scroll ul{
-    padding:0;
-    list-style-type:none;
+  .navbar-link:hover::before {
+    width: 130%;
   }
-  .navi-group{
-    display:flex;
-    justify-content: center;
-
-  }
-  .icon-logo {
-      height:35px;
-      width:35px;
-      padding:10px;
-      text-decoration: none;
-  }
-  .icon-logo:hover{
-    background-color: #555;
-  }
-  .display-inline{
-    display: inline !important;
-  }
-  
-  .green-color{
-    color: #33cc33 !important;
-  }
-  .email-text{
-    padding:10px;
-    margin-top:0px;
-  }
-  .email-text:hover{
-    background-color: #555;
-  }
-  .navi-links{
-    display:flex;
-    flex-direction:column;
-  }
-  .nav-full-width{
-    width:100%;
-  }
-  .nav-link-custom{
-    width:100%;
-    text-align: center;
-    color:white;
-  }
-    /* Active/current link */
-    // .nav-highlight a.active {
-    //   background-color: #33cc33 !important;
-    //   color: white;
-    // }
-  
-    .is-current{
-      background-color: #33cc33;
-      color: white;
-    }
-  
-    .hide-li{
-      list-style-type: none;
-      width:100%;
-    }
-    
-    
-    /* On screens that are less than 700px wide, make the sidebar into a topbar */
-    @media screen and (max-width: 1000px) {
-      .sidebar {
-        width: 100%;
-        height: auto;
-        /* position: relative; */
-        z-index: 1000;
-        position: fixed;
-        top: 0;
-      }
-      .navi-group{
-        display:relative;
-        float:left;
-      }
-        /* Hides portrait photo on small screens*/
-      .portrait-img{
-          display:none;
-          margin:0px !important;
-      }
-      .portrait-container{
-        display:none;
-      }
-      .title-name{
-        display:relative;
-          margin-top:0px;
-      }
-      .title-description{
-          display:none;
-      }
-      .icon-group{
-        margin-top:20px;
-        margin-bottom:20px;
-      }
-      .navi-links{
-        display:flex;
-        flex-direction: row;
-      }
-      .nav-full-width{
-        width:250px;
-      }
-      .nav-item-text{
-        font-size: small;
-      }
-      .nav-item-text{
-        white-space: nowrap;
-      }
-      .email-text{
-        display:none;
-      }
-    }
+  /* End of Navbar */
