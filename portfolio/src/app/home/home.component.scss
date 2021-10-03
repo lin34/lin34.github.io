@@ -1,15 +1,17 @@
-.content{
-    background-color: #292b2c;
-
+.center{
+    padding: 30vh;
+    text-align: left;
 }
-
-.text-white{
-    color:white !important;
+.hi-text{
+    color:white;
+    font-weight: bold;
+    font-size:50px;
 }
-
-.icon-logo {
-    height:35px;
-    width:35px;
-    padding:10px;
-    text-decoration: none;
+.home-text{
+    color:white;
+}
+.grad-text{
+    color:white;
+    font-size:20px;
+    font-style: italic;
 }
