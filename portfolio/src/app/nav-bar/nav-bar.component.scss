@@ -4,6 +4,13 @@
   .portrait-container{
     position:relative;
   }
+  .portrait-img{
+      border-radius: 50%;
+      width:300px;
+      height:300px;
+      border: 3px black; 
+      margin:20px;
+  }
 
   #main-nav{
     width:100%;
@@ -54,6 +61,17 @@
   .text-white{
       color:white !important;
   }
+  
+  /* The side navigation menu */
+  .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 400px;
+      background-color: #292b2c;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
     
   .nav-scroll ul{
     padding:0;
