@@ -8,6 +8,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
+import { MainLandingComponent } from './main-landing/main-landing.component';
+import { ProjectComponent } from './projects/project/project.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FooterComponent } from './footer/footer.component';
     ProjectsComponent,
     WorkExperienceComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    MainLandingComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,

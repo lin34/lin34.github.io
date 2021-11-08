@@ -1,4 +1,5 @@
 export interface ProjectData{
+    id:string;
     name:string;
     lang:string;//languages/skills used in project
     shortDescription:string;
