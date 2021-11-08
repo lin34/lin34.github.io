@@ -9,7 +9,7 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainLandingComponent } from './main-landing/main-landing.component';
-import { ProjectComponent } from './project/project.component';
+import { ProjectComponent } from './projects/project/project.component';
 
 @NgModule({
   declarations: [

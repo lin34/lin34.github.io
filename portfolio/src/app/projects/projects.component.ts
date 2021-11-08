@@ -8,6 +8,7 @@ import { ProjectData } from './project-data';
 export class ProjectsComponent implements OnInit {
   myProjects: ProjectData[] = [
     {
+      id: 'bicepcurlcounter',
       name: 'Bicep Curl Counter',
       lang: 'Python, Mediapipe, OpenCV',
       shortDescription:'A handy machine vision workout tool to count your curls.',
@@ -20,6 +21,7 @@ export class ProjectsComponent implements OnInit {
       picture: '../assets/projects/bicep_curl_counter.PNG',
     },
     {
+      id: 'wifismartthermostat',
       name: 'Wifi Smart Thermostat',
       lang: 'Python, Flask, REST API, Multi-threading, SolidWorks',
       shortDescription:'This Wifi Smart thermostat allows you to remotely control your HVAC system.',
@@ -30,6 +32,7 @@ export class ProjectsComponent implements OnInit {
       picture: '../assets/projects/wifi_therm_with_display.jpg',
     },
     {
+      id: 'socialmediaapp',
       name: 'Social Media App',
       lang: 'MERNG stack (MongoDB, Express, React.js, Node.js and GraphQL)',
       shortDescription: `This prototype social media app allows users to create an account, login,
@@ -50,6 +53,7 @@ export class ProjectsComponent implements OnInit {
       picture: '../assets/projects/merng_stack.PNG',
     },
     {
+      id: 'pidcontroller',
       name: 'PID Controller',
       lang: 'MatLab, Control Theory',
       shortDescription:
@@ -62,6 +66,7 @@ export class ProjectsComponent implements OnInit {
       picture: '../assets/projects/mte360_PID.PNG',
     },
     {
+      id: 'obstaclecourserobot',
       name: 'Obstacle Course Robot',
       lang: 'C',
       shortDescription:
