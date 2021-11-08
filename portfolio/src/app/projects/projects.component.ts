@@ -8,7 +8,16 @@ import { ProjectData } from './project-data';
 export class ProjectsComponent implements OnInit {
   myProjects: ProjectData[] = [
     {
-      id: 'bicepcurlcounter',
+      id: 'pathfindingvisualizer',
+      name: 'Path Finding Visualizer',
+      lang: 'Python, pygame',
+      shortDescription:'A pathfinding visualizer using BFS, DFS and A* algorithms.',
+      longDescription: `Visualizer tool built in Python which solves the shortest path between two nodes in a 25x25 maze.`,
+      link: 'https://github.com/lin34/PathfindingVisualizer',
+      picture: '../assets/projects/PathFindingVisualizer/ex_astar.PNG',
+    },
+    {
+      id: 'bicepcurlcounter'
       name: 'Bicep Curl Counter',
       lang: 'Python, Mediapipe, OpenCV',
       shortDescription:'A handy machine vision workout tool to count your curls.',
@@ -19,6 +28,18 @@ export class ProjectsComponent implements OnInit {
       When the arm transitions between these two stages, the counter is incremented.`,
       link: 'https://github.com/lin34/BicepCurlCounter',
       picture: '../assets/projects/bicep_curl_counter.PNG',
+    }
+    {
+      id:'compiler',
+      name: 'VHDL Compiler',
+      lang: 'Java, TDD, ANT test runner',
+      shortDescription:'A compiler that parses strings into a subset of VHDL',
+      longDescription: `Built this compiler across 8 lab sessions using a TDD approach. Blocks 
+      of code were implemented, before being tested to verify that they work. Used VSCode, with 
+      Java environment plugins. Overall learned a lot about writing well structured and robust code
+      using OOP and unit tests.`,
+      link: 'coming soon...',
+      picture: '../assets/projects/compiler/compiler.PNG',
     },
     {
       id: 'wifismartthermostat',
