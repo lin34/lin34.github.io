@@ -1,12 +1,19 @@
 <section class="section" id="_project">
-    <h1>Hello world, this is a project!</h1>
-    <img class="project-img" [src]="project.picture" [alt]="project.name">
-    <div class="project-text">
-        <a [href]="project.link" target="_blank">
-            <h2 class="project-name">{{project.name}}</h2>
+    <div *ngIf="projectExists" class="project-container">
+        <p class="title-text">{{project.name}}</p>
+        <img class="project-img" [src]="project.picture" [alt]="project.name">
+        <div class="project-text">
+            <h4 class="project-technologies">Skills: {{project.lang}}</h4>
+            <p>{{project.longDescription}}</p>
+        </div>
+        <a [href]="project.link" class="button" target="_blank">
+            See source code    
         </a>
-        <h4 class="project-technologies">Skills: {{project.lang}}</h4>
-        <p>{{project.shortDescription}}</p>
-
     </div>
+
+
+    <div *ngIf="!projectExists">
+        <h1>The project or repository you are looking for does not exist.</h1>
+    </div>
+
 </section>

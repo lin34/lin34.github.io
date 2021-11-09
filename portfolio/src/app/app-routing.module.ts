@@ -6,7 +6,7 @@ import { ProjectComponent } from './projects/project/project.component';
 const routes: Routes = [
   { path: '',   redirectTo: 'hello', pathMatch: 'full' },
   { path: 'hello', component: MainLandingComponent },
-  { path: 'project/:name', component: ProjectComponent },
+  { path: 'project/:id', component: ProjectComponent },
   
 ];
 

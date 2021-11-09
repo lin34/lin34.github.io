@@ -33,7 +33,7 @@ export class ProjectData{
           of code were implemented, before being tested to verify that they work. Used VSCode, with 
           Java environment plugins. Overall learned a lot about writing well structured and robust code
           using OOP and unit tests.`,
-          link: 'coming soon...',
+          link: 'project/noRepository',
           picture: '../assets/projects/compiler/compiler.PNG',
         },
         {
@@ -93,15 +93,15 @@ export class ProjectData{
           picture: '../assets/line_follow.jpg',
         },
       ];
-      
-      public getProjectFromId(id:string){
+//id should be string, but accept any
+      public getProjectFromId(id:any){
 
           for(let proj of this.myProjects){
               if(proj.id ==id){
                   return proj;
               }
           }
-          return;
+          return null;
       }
 
 }
