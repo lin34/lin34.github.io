@@ -1,0 +1,30 @@
+.knowledge-container{
+    height:100vh;
+    background-color: white;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.group{
+    font-size:30px;
+    font-weight:bold;
+    text-decoration: underline;
+}
+
+p{
+    font-size:20px;
+}
+
+.box-container{
+    display: flex;
+    align-items: flex-start;
+}
+
+.box{
+    width:400px;
+    font-size:20px;
+}
+
+.bold-text{
+    font-weight: bold;
+}

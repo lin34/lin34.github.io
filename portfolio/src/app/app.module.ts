@@ -10,6 +10,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainLandingComponent } from './main-landing/main-landing.component';
 import { ProjectComponent } from './projects/project/project.component';
+import { KnowledgeComponent } from './knowledge/knowledge.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProjectComponent } from './projects/project/project.component';
     NavBarComponent,
     FooterComponent,
     MainLandingComponent,
-    ProjectComponent
+    ProjectComponent,
+    KnowledgeComponent
   ],
   imports: [
     BrowserModule,
