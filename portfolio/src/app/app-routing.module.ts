@@ -4,9 +4,10 @@ import { MainLandingComponent } from './main-landing/main-landing.component';
 import { ProjectComponent } from './projects/project/project.component';
 
 const routes: Routes = [
-  { path: '/hello', component: MainLandingComponent },
-  { path: '/project/:name', component: ProjectComponent },
-  { path: '',   redirectTo: '/hello', pathMatch: 'full' },
+  { path: '',   redirectTo: 'hello', pathMatch: 'full' },
+  { path: 'hello', component: MainLandingComponent },
+  { path: 'project/:name', component: ProjectComponent },
+  
 ];
 
 @NgModule({

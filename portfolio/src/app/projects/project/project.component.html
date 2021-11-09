@@ -1,1 +1,12 @@
-<p>project works!</p>
+<section class="section" id="_project">
+    <h1>Hello world, this is a project!</h1>
+    <img class="project-img" [src]="project.picture" [alt]="project.name">
+    <div class="project-text">
+        <a [href]="project.link" target="_blank">
+            <h2 class="project-name">{{project.name}}</h2>
+        </a>
+        <h4 class="project-technologies">Skills: {{project.lang}}</h4>
+        <p>{{project.shortDescription}}</p>
+
+    </div>
+</section>

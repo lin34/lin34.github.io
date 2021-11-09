@@ -2,13 +2,16 @@
         <h1 class="section-heading section-3-heading">My Projects</h1>
     <div class="projects">
         <div *ngFor="let project of myProjects" class="project">
+            <a routerLink="/project/{{project.id}}">
             <img class="project-img" [src]="project.picture" [alt]="project.name">
             <div class="project-text">
-                <a [href]="project.link" target="_blank">
+                <!-- <a [href]="project.link" target="_blank">                </a> -->
                     <h2 class="project-name">{{project.name}}</h2>
-                </a>
+
                 <h4 class="project-technologies">Skills: {{project.lang}}</h4>
                     <p>{{project.shortDescription}}</p>
+                
             </div>
+        </a>
         </div>
     </div>
