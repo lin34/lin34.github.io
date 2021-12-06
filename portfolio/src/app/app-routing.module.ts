@@ -4,8 +4,8 @@ import { MainLandingComponent } from './main-landing/main-landing.component';
 import { ProjectComponent } from './projects/project/project.component';
 
 const routes: Routes = [
-  { path: '',   redirectTo: 'hello', pathMatch: 'full' },
-  { path: 'hello', component: MainLandingComponent },
+  //{ path: '',   redirectTo: 'hello', pathMatch: 'full' },
+  { path: '',   component: MainLandingComponent },
   { path: 'project/:id', component: ProjectComponent },
   
 ];
