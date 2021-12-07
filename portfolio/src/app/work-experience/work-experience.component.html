@@ -2,6 +2,18 @@
     <h1 class="section-heading">Work Experience</h1>
     <div class="projects">
         <div *ngFor="let job of myJobs" class="project">
+
+            <a routerLink="/project/{{project.id}}">
+                <img class="project-img" [src]="project.picture" [alt]="project.name">
+                <div class="project-text">
+                    <!-- <a [href]="project.link" target="_blank">                </a> -->
+                    <h2 class="project-name">{{project.name}}</h2>
+                    <h4 class="project-technologies">Skills: {{project.lang}}</h4>
+                    <p>{{project.shortDescription}}</p>
+                </div>
+            </a>
+
+
             <img class="project-img" [src]="job.picture" [alt]="job.company">
             <div class="project-text">
                 <h2 class="project-name">{{job.jobName}}</h2>
@@ -9,6 +21,9 @@
                 <h4 class="project-technologies">{{job.duration}}</h4>
                 <p>{{job.description}}</p>
             </div>
+
+
+            
         </div>
     </div>
 </div>
