@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MainLandingComponent } from './main-landing/main-landing.component';
 import { ProjectComponent } from './projects/project/project.component';
 import { KnowledgeComponent } from './knowledge/knowledge.component';
+import { JobComponent } from './work-experience/job/job.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { KnowledgeComponent } from './knowledge/knowledge.component';
     FooterComponent,
     MainLandingComponent,
     ProjectComponent,
-    KnowledgeComponent
+    KnowledgeComponent,
+    JobComponent
   ],
   imports: [
     BrowserModule,
