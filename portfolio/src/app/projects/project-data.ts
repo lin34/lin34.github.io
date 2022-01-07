@@ -2,32 +2,6 @@ import { ProjectType } from './project-type';
 
 export class ProjectData{
     public myProjects:ProjectType[] = [
-      {
-        id: 'crypto_predictor',
-        name: 'Ethereum Price Predictor',
-        lang: 'Python, tensorflow, numpy, matplotlib',
-        shortDescription:'An Ethereum price predictor using a neural network and yahoo finance api data.',
-        longDescription: `The Yahoo finance api was used to fetch Ethereum price history, normalized to CAD.
-        The data was filtered to only use the close market price for the day. The libraries used include numpy
-        matplotlib
-        pandas
-        pandas_datareader
-        sklearn
-        virtualenv
-        datetime
-        tensorflow.
-        The data to be fed into a Recurrent Neural Network (RNN) is prepared using numpy to format it into arrays.
-        The data used to train (x_train) includes the closing price for the previous 60 days. The correct value 
-        that it trains the model against is the 60th day. The complete data set consists of the data from the Jan 1, 2016
-        to the present day that the program is run (Jan 3, 2022). The training set is the first 80% of days, while 
-        the test set is the latter 20% up to the present day. The RNN uses a LSTM (Long Short Term Memory) data
-        input and must be specially formatted into a 3 dimensional data format detailing the number of rows (data set entries), 
-        the time step (columns in this case the past 60 days), and the feature, which in this case is 1, since we are
-        only using the close market price. The model has 2 LSTM layers and 2 densely connected layers.
-        The graph shows the predicted price (yellow) compared to the real price(red). `,
-        link: 'https://github.com/lin34/cryptoPredictor',
-        picture: '../assets/projects/crypto_predictor.png',
-      },
         {
           id: 'pathfindingvisualizer',
           name: 'Path Finding Visualizer',
